@@ -1,36 +1,29 @@
-## Step 1: (replace-me: STEP-NAME)
+## 1단계 · 보안 정책을 문서로 만든다
 
-(replace-me: OPTIONAL Brief story or scenario to introduce the step)
+외부 연구자가 취약점을 찾았을 때 어디로 연락해야 하는지가 저장소에 적혀 있어야 합니다.
 
-(replace-me: OPTIONAL Reference images from the `.github/images/` directory to support any part of the content)
+### 할 일
 
-<img width="200" alt="descriptive alt text" src="../images/inspectocat.png" />
+`SECURITY.md` 파일을 만들고 아래 두 제목을 반드시 포함하세요.
 
-### 📖 Theory: (replace-me: Theory title)
+```markdown
+# Security Policy
 
-<!-- GitHub-styled notifications can be used outside of ordered lists. Available options are: NOTE, IMPORTANT, WARNING, TIP, CAUTION -->
-<!--
-> [!NOTE]
-> (Important note or additional information relevant to this section)
- -->
+## Supported Versions
+| 버전 | 지원 여부 |
+| --- | --- |
+| 1.x | 지원 |
+| 0.x | 미지원 |
 
-(replace-me: Optional theory or background information relevant to this step)
+## Reporting a Vulnerability
+비공개로 알려주세요. Security 탭의 Report a vulnerability 를 사용합니다.
+공개 이슈로 올리지 마세요. 5영업일 안에 회신합니다.
+```
 
+### 왜 이렇게 하나
 
-### ⌨️ Activity: (replace-me: Activity title)
+`SECURITY.md` 는 단순한 문서가 아닙니다. 이 파일이 있으면 저장소 Security 탭에
+**Report a vulnerability** 버튼이 활성화되고, 비공개 신고 통로가 열립니다.
 
-1. (replace-me: First instruction)
-
-    (replace-me: Make sure to properly indent any multiline instructions)
-
-1. (replace-me: Second instruction)
-
-1. (replace-me: Additional instructions as needed)
-
-<details>
-<summary>Having trouble? 🤷</summary><br/>
-
-- (replace-me: Troubleshooting tip or hint)
-- (replace-me: Additional troubleshooting tips as needed)
-
-</details>
+파일이 없으면 연구자는 공개 이슈로 취약점을 올립니다. 그 순간 취약점이 전 세계에 공개됩니다.
+문서 한 장이 노출 시점을 바꿉니다.
