@@ -1,36 +1,22 @@
-## Step 2: (replace-me: STEP-NAME)
+## 2단계 · 보안 파일에 소유자를 붙인다
 
-(replace-me: OPTIONAL Brief story or scenario to introduce the step)
+정책을 만들어도 아무나 고칠 수 있으면 정책이 아닙니다.
 
-### 📖 Theory: (replace-me: Theory title)
+### 할 일
 
-<!-- GitHub-styled notifications can be used outside of ordered lists. Available options are: NOTE, IMPORTANT, WARNING, TIP, CAUTION -->
-<!--
-> [!NOTE]
-> (Important note or additional information relevant to this section)
- -->
+`.github/CODEOWNERS` 파일을 만드세요. `@본인계정` 부분을 자기 계정으로 바꾸세요.
 
-(replace-me: Optional theory or background information relevant to this step)
+```
+# 보안 설정은 보안 담당자가 리뷰한다
+/.github/workflows/   @본인계정
+/.github/dependabot.yml   @본인계정
+/SECURITY.md   @본인계정
+```
 
-(replace-me: OPTIONAL Reference images from the `.github/images/` directory to support any part of the content)
+### 왜 이렇게 하나
 
-<img width="200" alt="descriptive alt text" src="../images/inflatocat.png" />
+CODEOWNERS 만으로는 강제되지 않습니다. **룰셋이나 브랜치 보호에서 "코드 소유자 리뷰 필수"를 켜야**
+실제로 막힙니다. 파일은 "누가 봐야 하는가"만 정하고, 강제는 다음 단계가 합니다.
 
-
-### ⌨️ Activity: (replace-me: Activity title)
-
-1. (replace-me: First instruction)
-
-    (replace-me: Make sure to properly indent any multiline instructions)
-
-1. (replace-me: Second instruction)
-
-1. (replace-me: Additional instructions as needed)
-
-<details>
-<summary>Having trouble? 🤷</summary><br/>
-
-- (replace-me: Troubleshooting tip or hint)
-- (replace-me: Additional troubleshooting tips as needed)
-
-</details>
+경로 문법은 `.gitignore` 와 같습니다. 폴더는 끝에 `/` 를 붙입니다.
+가장 마지막에 일치하는 규칙이 이깁니다. 위에서 아래가 아니라 **아래가 위를 덮어씁니다.**
