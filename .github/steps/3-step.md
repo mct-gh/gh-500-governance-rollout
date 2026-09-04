@@ -1,35 +1,28 @@
-## Step 3: (replace-me: STEP-NAME)
+## 3단계 · 룰셋으로 강제한다
 
-(replace-me: OPTIONAL Brief story or scenario to introduce the step)
+이제 실제로 막을 차례입니다.
 
-### 📖 Theory: (replace-me: Theory title)
+### 할 일
 
-<!-- GitHub-styled notifications can be used outside of ordered lists. Available options are: NOTE, IMPORTANT, WARNING, TIP, CAUTION -->
-<!--
-> [!NOTE]
-> (Important note or additional information relevant to this section)
- -->
+저장소 **Settings → Rules → Rulesets → New ruleset → New branch ruleset** 으로 들어갑니다.
 
-(replace-me: Optional theory or background information relevant to this step)
+1. 이름은 `protect-main` 으로 합니다
+2. Enforcement status 를 **Active** 로 둡니다
+3. Target branches 에 **Include default branch** 를 추가합니다
+4. Rules 에서 아래를 켭니다
+   - Require a pull request before merging
+   - Require review from Code Owners
+   - Require status checks to pass
 
-### ⌨️ Activity: (replace-me: Activity title)
+만든 뒤 저장하세요. 채점기가 API 로 활성 룰셋이 있는지 확인합니다.
 
-1. (replace-me: First instruction)
+### 왜 이렇게 하나
 
-   (replace-me: Make sure to properly indent any multiline instructions)
+룰셋은 브랜치 보호 규칙의 후속입니다. 차이가 시험에 나옵니다.
 
-1. (replace-me: Second instruction)
+- 브랜치 보호는 저장소마다 따로 걸어야 합니다
+- 룰셋은 **조직 수준에서 한 번에** 걸 수 있고, 여러 개가 겹쳐 적용됩니다
+- 룰셋은 Evaluate 모드가 있어서, 막지 않고 **위반만 기록**해볼 수 있습니다
 
-   (replace-me: Optionally reference images from the `.github/images/` directory to support any part of the content)
-
-   <img width="200" alt="descriptive alt text" src="../images/jetpacktocat.png" />
-
-1. (replace-me: Additional instructions as needed)
-
-<details>
-<summary>Having trouble? 🤷</summary><br/>
-
-- (replace-me: Troubleshooting tip or hint)
-- (replace-me: Additional troubleshooting tips as needed)
-
-</details>
+큰 조직에 새 정책을 넣을 때는 Active 로 바로 가지 않습니다.
+Evaluate 로 몇 주 돌려 얼마나 깨지는지 보고 나서 Active 로 올립니다.
