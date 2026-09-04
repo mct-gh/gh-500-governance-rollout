@@ -1,16 +1,10 @@
-## Review
+## 정리
 
-_Congratulations, you've completed this exercise and learned a lot about (replace-me: feature/product that was taught in this exercise)
+거버넌스는 네 겹으로 쌓입니다.
 
-<img src="https://octodex.github.com/images/jetpacktocat.png" alt="celebrate" width=200 align=right>
+1. **문서** — SECURITY.md 가 신고 통로를 연다
+2. **소유권** — CODEOWNERS 가 누가 봐야 하는지 정한다
+3. **강제** — 룰셋이 실제로 막는다
+4. **감사** — API 가 지금 상태를 알려준다
 
-Here's a recap of your accomplishments:
-
-- (replace-me: Accomplishment #1)
-- (replace-me: Accomplishment #N)
-
-### What's next?
-
-- (replace-me: Natural follow up Skills exercise - if there is one)
-- (replace-me: Documentation link to learn more about the feature)
-- (replace-me: Other resources or calls to action)
+앞의 셋만 하고 넷째를 빼면, 정책이 언제 무너졌는지 아무도 모릅니다.
