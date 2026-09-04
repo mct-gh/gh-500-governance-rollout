@@ -1,46 +1,20 @@
-# (replace-me: Exercise title)
+# 랩 C · 보안 거버넌스를 코드로 건다
 
-_(replace-me: One-line description of the exercise)_
+_GH-500 모듈 7 · 정책, 룰셋, 역할, API 자동화_
 
-## Welcome
+## 이 랩에서 하는 일
 
-- **Who is this for**: (replace-me: Target audience description)
-- **What you'll learn**: (replace-me: Learning objectives)
-- **What you'll build**: (replace-me: Description of what the learner will create)
-- **Prerequisites**:
-  - (replace-me: Prerequisite skill/exercise)
-  - (replace-me: Other prerequisites)
+기능을 켜는 것과 **조직에 굴러가게 만드는 것**은 다른 일입니다.
+이 랩은 후자를 다룹니다. 정책 문서, 코드 소유자, 룰셋, 그리고 상태를 API 로 확인하는 스크립트까지 만듭니다.
 
-- **How long**: This exercise takes less than (replace-me: estimated time) to complete.
+시험 도메인 6(GitHub Security suites administration, 10~15%)이 정확히 이 구간입니다.
 
-In this exercise, you will:
+## 소요 시간
 
-1. (replace-me: Learning objective step #1)
-1. (replace-me: Learning objective step #2)
-1. (replace-me: Learning objective step #N)
+약 35분, 4단계
 
+## 시작하는 법
 
-### How to start this exercise
-
-Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
-
-<!--  (replace-me: Make sure to edit the URL with proper template_owner, template_name, repo name and description)  -->
-[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=exercise-template&owner=%40me&name=skills-<replace-me>&description=Exercise:+Replace+me&visibility=public)
-
-<details>
-<summary>Having trouble? 🤷</summary><br/>
-
-When copying the exercise, we recommend the following settings:
-
-- For owner, choose your personal account or an organization to host the repository.
-
-- We recommend creating a public repository, since private repositories will use Actions minutes.
-
-If the exercise isn't ready in 20 seconds, please check the [Actions](../../actions) tab.
-
-- Check to see if a job is running. Sometimes it simply takes a bit longer.
-
-- If the page shows a failed job, please submit an issue. Nice, you found a bug! 🐛
-
-</details>
-
+1. **Use this template → Create a new repository**
+2. 소유자는 본인 계정, 공개 범위는 **Public**
+3. 20초 뒤 새로고침하면 첫 단계가 이슈로 열립니다
